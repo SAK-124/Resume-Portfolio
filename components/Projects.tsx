@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           className="mb-20 text-center"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 font-display tracking-tight">

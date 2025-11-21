@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.2 }}
             >
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-10 flex items-center gap-3">
                 <span className="text-accent">04.</span> TECHNICAL ARSENAL
@@ -28,7 +28,7 @@ const Skills: React.FC = () => {
                       key={index}
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
+                      viewport={{ once: false, amount: 0.2 }}
                       transition={{ delay: index * 0.1 }}
                       className="bg-secondary/40 p-6 rounded-r-xl border-l-4 border-l-accent border-y border-r border-surface backdrop-blur-sm hover:bg-secondary/60 transition-colors group"
                     >
@@ -60,7 +60,7 @@ const Skills: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.2 }}
             >
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-display font-bold text-white flex items-center gap-2">
@@ -106,7 +106,7 @@ const Skills: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.2 }}
               transition={{ delay: 0.2 }}
             >
               <h3 className="text-2xl font-display font-bold text-white mb-6 flex items-center gap-2">
