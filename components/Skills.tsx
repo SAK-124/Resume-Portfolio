@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
     <section id="skills" className="py-20 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Left: Skills List (7 Cols) */}
           <div className="lg:col-span-7">
             <motion.div
@@ -19,12 +19,12 @@ const Skills: React.FC = () => {
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-10 flex items-center gap-3">
                 <span className="text-accent">04.</span> TECHNICAL ARSENAL
               </h2>
-              
+
               <div className="grid gap-6">
                 {SKILLS_DATA.map((category, index) => {
                   const Icon = category.icon;
                   return (
-                    <motion.div 
+                    <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {category.skills.map((skill, i) => (
-                          <span 
+                          <span
                             key={i}
                             className="px-3 py-1.5 bg-primary/80 text-zinc-300 text-sm font-mono rounded border border-surface hover:border-accent hover:text-accent transition-colors cursor-default"
                           >
@@ -55,9 +55,9 @@ const Skills: React.FC = () => {
 
           {/* Right: GitHub & Certs (5 Cols) */}
           <div className="lg:col-span-5 space-y-10">
-             
-             {/* GitHub Showcase */}
-             <motion.div
+
+            {/* GitHub Showcase */}
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -67,15 +67,15 @@ const Skills: React.FC = () => {
                   <Github className="text-white" /> Code Repositories
                 </h3>
                 <a href="https://github.com/SAK-124" target="_blank" rel="noreferrer" className="text-sm text-accent hover:text-highlight transition-colors font-mono">
-                  View Profile ->
+                  View Profile &rarr;
                 </a>
               </div>
 
               <div className="space-y-4">
                 {GITHUB_REPOS.map((repo, i) => (
-                  <a 
-                    key={i} 
-                    href={repo.url} 
+                  <a
+                    key={i}
+                    href={repo.url}
                     target="_blank"
                     rel="noreferrer"
                     className="block p-5 bg-secondary rounded-lg border border-surface hover:border-accent transition-all group"
